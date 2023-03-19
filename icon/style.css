@@ -1,0 +1,53 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu{
+  width: 200px;
+  height: 200px;
+  margin: 8px;
+  background-color:transparent;
+  cursor: pointer;
+}
+.menu div{
+  width: 120px;
+  height: 120px;
+  margin: 40px;
+  position: relative;
+}
+.menu span{
+  background-color: #000;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform .4s ,width .3s;
+  transform: translate(-50%,50%);
+}
+.menu .line-1{
+  transform: translate(-50%,-30px);
+}
+.menu .line-3{
+  transform: translate(-50%,40px);
+}
+.openmenu .line-1{
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+.openmenu .line-3{
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.openmenu .line-2{
+  width: 0;
+}
