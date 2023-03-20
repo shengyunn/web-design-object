@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="logo" >LOGO</nav>
+    <nav class="navber"id="navber">
+      <ul class="links">
+        <li><a href="#">about</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">cont</a></li>
+      </ul>
+      <div class="top">
+        <span class="line-1"></span>
+        <span class="line-2"></span>
+        <span class="line-3"></span>
+      </div>
+    </nav>
+  </header>
+  <script>
+    var navber = document.getElementById('navber');
+    window.addEventListener('scroll',() =>{
+      if(window.scrollY >40){
+        navber.classList.add("movenavber");
+      }else{
+        navber.classList.remove("movenavber");
+      }
+    });
+    
+  </script>
+</body>
+</html>
