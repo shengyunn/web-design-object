@@ -8,19 +8,29 @@
   <title>navber</title>
 </head>
 <body>
-  <div class="box">
-    <h1>Logo</h1>
-  </div>
-  <div class="box container "id="container">
-      <div class="text">About</div>
-      <div class="text">Home</div>
-      <div class="text">Help</div>
-  </div>
+  <nav class="header" id="header" >
+    <a href="#" class="logo" >Logo</a>
+    <input class="search" placeholder="Search......">
+    <button class="button" type="sumit"></button>
+  </nav>
+  <nav class="navber" id="navber" >
+    <li><a href="#"></a>Home</li>
+    <li><a href="#"></a>about</li>
+    <li><a href="#"></a>help</li>
+  </nav>
   <script>
-    
-    var gb =document.getElementById('container');
-    gb.onclick = function (){
-      gb.classList.toggle('sobg');
+    window.onscroll = function(){myFunction()};
+    var header = document.getElementById("navber");
+    var sticky = header.offsetTop;
+    function myFunction (){
+      if(window.pageYOffset > 70){
+        header.classList.add("sticky");
+        navber.classList.add("so");
+      }
+      else{
+        header.classList.remove("sticky")
+        navber.classList.remove("so")
+      }
     }
   </script>
 </body>
